@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scary Hallowen Party</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HalloweenStyleCSS.css">
+    <script src="HalloweenScriptJS.js"></script>
+    
+</head>
+<body>
+        <audio id="risa">
+                <source src="risa.mp3" type="audio/mpeg">
+              </audio>
+    <div id="wrapper">
+        <h1>Scary Halloween Party</h1>
+        <h2>Invit all your friends</h2>
+        <h3>Click on the eyes for see the hour that start the party</h3>
+        <h4 id="hora">21:30</h4>
+        <h5 id="destruccion" onclick="mostrar('bomba')">Click here to destroy the invitation</h5>
+        <img id="bomba" src="bomba.gif" >
+
+        <div id="ventana" onclick="mostrar('murcielago');sonar('risa');mostrar('hora')"></div><!--rectangulo para definir un area activable // e invocacion de la funcion-->
+        <img id="murcielago" src="gifMurcielago.gif" ondblclick="ocultar('murcielago');pausar('risa')">
+
+    </div>
+    
+</body>
+</html>
